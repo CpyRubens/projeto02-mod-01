@@ -4,8 +4,9 @@ console.clear();
 // o jogo só irá parar caso o usuário opte por parar, isso quebra o laço while
 while (1) { 
   let rodadas = prompt("Quantas rodadas deseja jugar, meu chapa?"); // quantas rodadas o usuário irá jogar nessa partida
-  console.log(typeof(rodadas));
+ 
   while(isNaN(rodadas)){
+    console.log("Por favor, insira um número válido!");
        rodadas = +prompt("Quantas rodadas deseja jugar, meu chapa?")
     }
 //contadores de vitória
